@@ -33,6 +33,14 @@ const Board = () =>{
   
   }
 
+  const handleResetEvent = () => {
+    const newSquares = [...squares];
+    const winnerDeclared = Boolean(calculateWinner(newSquares))
+    if (winnerDeclared) {
+      return setSquares(Array(9).fill(null));
+    }
+  }
+
   const renderSquare = (i) => {
     return (
       <Square value={squares[i]}
@@ -58,6 +66,13 @@ const Board = () =>{
       </div>
       <div className="board-row">
       {renderSquare(6)}{renderSquare(7)}{renderSquare(8)}
+      </div>
+      <div>
+      <button 
+      className="reset-button"
+      onClick={handleResetEvent}>
+        Reset Board
+      </button>
       </div>
       
     </div>
