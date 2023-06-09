@@ -84,7 +84,7 @@ const Board = () =>{
 function App() {
   return (
     <div className="game">
-      Simple Tic Tac Toe
+      Simple Noughts and Crosses
       <Board/>
     </div>
   );
