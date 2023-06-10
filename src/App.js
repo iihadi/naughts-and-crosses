@@ -67,7 +67,7 @@ const Board = () =>{
       <div className="board-row">
       {renderSquare(6)}{renderSquare(7)}{renderSquare(8)}
       </div>
-      <div>
+      <div className="button-wrapper">
       <button 
       className="reset-button"
       onClick={handleResetEvent}>
@@ -84,7 +84,10 @@ const Board = () =>{
 function App() {
   return (
     <div className="game">
-      Simple Noughts and Crosses
+      <nav>
+       <h1>Naughts and Crosses</h1>
+      </nav>
+      
       <Board/>
     </div>
   );

@@ -44,6 +44,11 @@
   margin-bottom: 5%;
 }
 
+.button-wrapper {
+  text-align: center;
+  margin: 2%;
+}
+
 .reset-button {
   align-items: center;
   background-color: #FFFFFF;
